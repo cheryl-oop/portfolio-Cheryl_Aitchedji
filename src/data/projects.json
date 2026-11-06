@@ -1,0 +1,11 @@
+[
+  {
+    "id": "1",
+    "type": "frontend",
+    "name": "Digital Lookbook",
+    "description": "This is a digital wardrobe.",
+    "img": "src/assets/smoothie orange.png",
+    "githib-link": "Link",
+    "githib-link-2": ""
+  }
+]
