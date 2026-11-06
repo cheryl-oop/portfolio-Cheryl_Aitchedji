@@ -1,11 +1,13 @@
 [
   {
     "id": "1",
+    "date": "2025",
     "type": "frontend",
     "name": "Digital Lookbook",
     "description": "This is a digital wardrobe.",
-    "img": "src/assets/smoothie orange.png",
-    "githib-link": "Link",
-    "githib-link-2": ""
+    "tools": ["Javascript", "CSS", "HTML", "MongoDB"],
+    "images": ["/images/digital-lookbook-1"],
+    "website": "https://cheryl-oop.github.io/digital-lookbook-frontend/",
+    "githubLink": "https://github.com/cheryl-oop/digital-lookbook-frontend"
   }
 ]
