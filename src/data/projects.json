@@ -10,5 +10,17 @@
     "images": ["/images/digital-lookbook-1.png"],
     "website": "https://cheryl-oop.github.io/digital-lookbook-frontend/",
     "githubLink": "https://github.com/cheryl-oop/digital-lookbook-frontend"
+  },
+  {
+    "id": "2",
+    "date": "2026",
+    "type": "backend",
+    "name": "Hobbyhub",
+    "description": "A streaming platform.",
+    "tools": ["PHP", "Blade", "Laravel", "CSS"],
+    "coverImage": "/images/digital-lookbook-1.png",
+    "images": ["/images/digital-lookbook-1.png"],
+    "website": "https://cheryl-oop.github.io/digital-lookbook-frontend/",
+    "githubLink": "https://github.com/cheryl-oop/digital-lookbook-frontend"
   }
 ]

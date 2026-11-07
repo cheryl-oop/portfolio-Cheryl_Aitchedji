@@ -1,0 +1,27 @@
+/* Typography (main) */
+@font-face {
+  font-family: "Integral CF";
+  src: url("/fonts/Fontspring-DEMO-integralcf-extrabold.otf") format("opentype");
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Integral Thin";
+  src: url("/fonts/Fontspring-DEMO-integralcf-medium.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+:root {
+  /* Typography */
+  --font-heading: "Integral CF", sans-serif;
+  --font-thin: "Integral Thin", sans-serif;
+  /* Colors 
+  --color-bg: #fdfdf5;
+  --color-text: #101010;
+  --color-accent-light: #fff8a8;
+  --color-accent-red: #e96558;
+  --color-accent-green: #1f3222;
+  */
+}
