@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Audiowide&family=Bebas+Neue&family=Cause:wght@100..900&family=Domine:wght@400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Urbanist:ital,wght@0,100..900;1,100..900&family=Varela+Round&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
 /* Typography (main) */
 @font-face {
   font-family: "Integral CF";
@@ -14,9 +15,18 @@
 }
 
 :root {
+  --space-page-x: clamp(1rem, 4.5vw, 4rem);
+  --space-page-y: clamp(2rem, 1rem + 4vw, 4rem);
   /* Typography */
   --font-heading: "Integral CF", sans-serif;
-  --font-thin: "Integral Thin", sans-serif;
+  --font-heading-thin: "Integral Thin", sans-serif;
+  --font-text: "Montserrat", sans-serif;
+
+  --text-sm: clamp(0.875rem, 0.8rem + 0.2vw, 1rem);
+  --text-base: clamp(1rem, 0.9rem + 0.3vw, 1.125rem);
+  --text-lg: clamp(1.125rem, 1rem + 0.5vw, 1.5rem);
+  --text-xl: clamp(1.5rem, 1.2rem + 1.5vw, 2.5rem);
+  --text-hero: clamp(3rem, 2rem + 5vw, 7rem);
   /* Colors 
   --color-bg: #fdfdf5;
   --color-text: #101010;
