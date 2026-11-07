@@ -6,7 +6,8 @@
     "name": "Digital Lookbook",
     "description": "This is a digital wardrobe.",
     "tools": ["Javascript", "CSS", "HTML", "MongoDB"],
-    "images": ["/images/digital-lookbook-1"],
+    "coverImage": "/images/digital-lookbook-1.png",
+    "images": ["/images/digital-lookbook-1.png"],
     "website": "https://cheryl-oop.github.io/digital-lookbook-frontend/",
     "githubLink": "https://github.com/cheryl-oop/digital-lookbook-frontend"
   }

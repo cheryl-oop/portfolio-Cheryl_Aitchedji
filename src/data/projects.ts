@@ -7,9 +7,12 @@ export type Project = {
   name: string;
   description: string;
   tools: string[];
+  coverImage: string;
   images: string[];
   website: string;
   githubLink: string;
 };
+
+export const getProjectById = (id: string) => projects.find((p) => p.id === id);
 
 export const projects: Project[] = projectsData;
