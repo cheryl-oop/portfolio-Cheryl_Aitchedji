@@ -1,5 +1,9 @@
 /* HEADER */
 
+.logo p {
+  font-weight: bold;
+  display: inline;
+}
 .header {
   position: relative;
   z-index: 100;

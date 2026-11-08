@@ -3,6 +3,7 @@ import { ProjectsPage } from "../pages/ProjectsPage.tsx";
 import { ProjectPage } from "../pages/ProjectPage.tsx";
 import { Layout } from "../layouts/Layout.tsx";
 import { HomePage } from "../pages/HomePage.tsx";
+import { AboutMe } from "../pages/AboutMe.tsx";
 
 export const router = createBrowserRouter([
   {
@@ -11,6 +12,7 @@ export const router = createBrowserRouter([
       { path: "/", element: <HomePage /> },
       { path: "/projects", element: <ProjectsPage /> },
       { path: "/projects/:id", element: <ProjectPage /> },
+      { path: "/about-me", element: <AboutMe /> },
     ],
   },
 ]);

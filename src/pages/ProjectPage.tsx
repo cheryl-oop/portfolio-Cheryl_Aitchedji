@@ -22,7 +22,7 @@ export const ProjectPage = () => {
   };
 
   return (
-    <div className=".page-wrapper">
+    <div className="page-wrapper">
       <section className="project-page-section">
         <div className="project-page-description">
           <p>{project.date}</p>

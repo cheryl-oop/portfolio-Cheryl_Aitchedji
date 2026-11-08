@@ -12,13 +12,13 @@ export const Header = () => {
     <header className="header">
       <div className="header-container">
         <Link to="/" className="logo" onClick={closeMenu}>
-          LOGO
+          <p className="@">@</p>CherylAitchedji
         </Link>
 
         {/* Desktop navigation */}
         <nav className="desktop-nav">
           <NavLink to="/projects">PROJECTS</NavLink>
-          <NavLink to="/about">ABOUT ME</NavLink>
+          <NavLink to="/about-me">ABOUT ME</NavLink>
         </nav>
 
         <NavLink to="/contacts" className="desktop-contact">
