@@ -6,11 +6,7 @@ import "../styles/projectsPage.css";
 
 import { motion } from "motion/react";
 import { AnimatedWords } from "../components/animations/AnimatedWords.tsx";
-import {
-  PANEL_DURATION,
-  PANEL_EASE,
-  START,
-} from "../components/animations/timing.ts";
+import { START } from "../components/animations/timing.ts";
 import { fadeUp, cardList } from "../components/animations/variants.ts";
 
 const types = ["All", ...new Set(projects.map((p) => p.type))];
@@ -25,13 +21,8 @@ export const ProjectsPage = () => {
   return (
     <>
       <Header />
-      <motion.div
-        initial={{ clipPath: "inset(100% 0% 0% 0%)" }}
-        animate={{ clipPath: "inset(0% 0% 0% 0%)" }}
-        transition={{ duration: PANEL_DURATION, ease: PANEL_EASE }}
-        className="page-wrapper"
-      >
-        <motion.section>
+      <div className="page-wrapper">
+        <section>
           <div className="projects-page-description">
             <motion.img
               className="doodle"
@@ -94,8 +85,8 @@ export const ProjectsPage = () => {
               ))}
             </motion.div>
           </div>
-        </motion.section>
-      </motion.div>
+        </section>
+      </div>
     </>
   );
 };

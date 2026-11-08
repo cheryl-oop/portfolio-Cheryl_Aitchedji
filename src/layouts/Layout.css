@@ -1,0 +1,7 @@
+.page {
+  position: fixed;
+  inset: 0;
+  overflow-y: auto; /* each page scrolls on its own */
+  overscroll-behavior: contain;
+  background: var(--color-bg);
+}

@@ -1,6 +1,7 @@
 import { useLocation, useOutlet } from "react-router";
 import { AnimatePresence, motion } from "motion/react";
 import { PANEL_DURATION, PANEL_EASE } from "../components/animations/timing.ts";
+import "./Layout.css";
 
 export const Layout = () => {
   const location = useLocation();
@@ -11,10 +12,14 @@ export const Layout = () => {
       <motion.div
         key={location.pathname}
         className="page"
-        initial={{ y: "100%" }}
-        animate={{ y: 0 }}
-        exit={{ y: "-15%", opacity: 0.5 }}
-        transition={{ duration: PANEL_DURATION, ease: PANEL_EASE }}
+        initial={{ y: "100%", zIndex: 2 }}
+        animate={{ y: 0, zIndex: 2 }}
+        exit={{ y: 0, zIndex: 1, filter: "brightness(0.6)" }}
+        transition={{
+          duration: PANEL_DURATION,
+          ease: PANEL_EASE,
+          zIndex: { duration: 0 },
+        }}
       >
         {outlet}
       </motion.div>
