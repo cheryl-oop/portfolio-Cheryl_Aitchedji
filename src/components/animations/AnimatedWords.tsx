@@ -1,12 +1,10 @@
-// components/AnimatedWords.tsx
 import { motion } from "motion/react";
 import type { Variants } from "motion/react";
-import "./AnimatedWords.css";
 
 const container: Variants = {
   hidden: {},
-  visible: (delay: number = 0) => ({
-    transition: { staggerChildren: 0.06, delayChildren: delay },
+  visible: ({ delay, stagger }: { delay: number; stagger: number }) => ({
+    transition: { staggerChildren: stagger, delayChildren: delay },
   }),
 };
 
@@ -21,8 +19,9 @@ const word: Variants = {
 
 type AnimatedWordsProps = {
   text: string;
-  as?: "h2" | "p";
+  as?: "h2" | "h3" | "p";
   delay?: number;
+  stagger?: number;
   className?: string;
 };
 
@@ -30,6 +29,7 @@ export const AnimatedWords = ({
   text,
   as = "p",
   delay = 0,
+  stagger = 0.06,
   className,
 }: AnimatedWordsProps) => {
   const Tag = motion[as];
@@ -37,7 +37,7 @@ export const AnimatedWords = ({
     <Tag
       className={className}
       variants={container}
-      custom={delay}
+      custom={{ delay, stagger }}
       initial="hidden"
       animate="visible"
       aria-label={text}

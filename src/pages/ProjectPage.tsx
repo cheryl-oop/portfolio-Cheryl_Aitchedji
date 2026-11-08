@@ -2,11 +2,24 @@ import { useParams, Navigate } from "react-router";
 import { getProjectById } from "../data/projects";
 import "../styles/projectPage.css";
 
+import { motion } from "motion/react";
+import { AnimatedWords } from "../components/animations/AnimatedWords.tsx";
+import { Reveal } from "../components/animations//Reveal.tsx";
+import { START } from "../components/animations/timing.ts";
+import { fadeUp } from "../components/animations//variants.ts";
+
 export const ProjectPage = () => {
   const { id } = useParams<{ id: string }>();
   const project = id ? getProjectById(id) : undefined;
 
   if (!project) return <Navigate to="/projects" replace />;
+
+  const tools = {
+    hidden: {},
+    visible: {
+      transition: { staggerChildren: 0.06, delayChildren: START + 1.5 },
+    },
+  };
 
   return (
     <div className=".page-wrapper">
@@ -18,7 +31,7 @@ export const ProjectPage = () => {
           <div className="project-details">
             <p>{project.description}</p>
 
-            <div className="project-links">
+            <Reveal delay={START + 0.3} className="project-links">
               {project.website && (
                 <a href={project.website} target="_blank" rel="noreferrer">
                   Visit website
@@ -29,18 +42,37 @@ export const ProjectPage = () => {
                   GitHub
                 </a>
               )}
-            </div>
+            </Reveal>
 
             <div className="tech-stack-wrapper">
-              <div className="tech-stack-description">
-                <h3>Tech Stack</h3>
-                <ul className="project-tools">
-                  {project.tools.map((tool) => (
-                    <li key={tool}>{tool}</li>
-                  ))}
-                </ul>
-              </div>
-              <img className="doodle" src="/images/doodles/cher-working.jpg" />
+              <Reveal delay={START + 0.5}>
+                <div className="tech-stack-description">
+                  <h3>Tech Stack</h3>
+                  <motion.ul
+                    className="project-tools"
+                    variants={tools}
+                    initial="hidden"
+                    animate="visible"
+                  >
+                    {project.tools.map((tool) => (
+                      <motion.li key={tool}>{tool}</motion.li>
+                    ))}
+                  </motion.ul>
+                </div>
+              </Reveal>
+              <motion.img
+                className="doodle"
+                src="/images/doodles/cher-working.jpg"
+                alt=""
+                initial={{ scale: 0, rotate: -20, opacity: 0 }}
+                animate={{ scale: 1, rotate: 0, opacity: 1 }}
+                transition={{
+                  type: "spring",
+                  stiffness: 200,
+                  damping: 14,
+                  delay: START + 1.5,
+                }}
+              />
             </div>
           </div>
         </div>
@@ -48,11 +80,19 @@ export const ProjectPage = () => {
         {project.images.length > 0 && (
           <div className="project-images">
             {project.images.map((src, i) => (
-              <img
+              <motion.img
                 key={src}
                 src={src}
                 alt={`${project.name} screenshot ${i + 1}`}
                 loading="lazy"
+                initial={{ y: 60, opacity: 0 }}
+                whileInView={{ y: 0, opacity: 1 }}
+                viewport={{ once: true, margin: "-60px" }}
+                transition={{
+                  duration: 0.7,
+                  ease: "easeOut",
+                  delay: i < 2 ? START + 0.5 + i * 0.15 : 0,
+                }}
               />
             ))}
           </div>
