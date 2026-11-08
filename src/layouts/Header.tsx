@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router";
+import { NavLink } from "react-router";
 import "./Header.css";
 
 export const Header = () => {
@@ -16,13 +17,13 @@ export const Header = () => {
 
         {/* Desktop navigation */}
         <nav className="desktop-nav">
-          <Link to="/projects">PROJECTS</Link>
-          <Link to="/about">ABOUT ME</Link>
+          <NavLink to="/projects">PROJECTS</NavLink>
+          <NavLink to="/about">ABOUT ME</NavLink>
         </nav>
 
-        <Link to="/contacts" className="desktop-contact">
+        <NavLink to="/contacts" className="desktop-contact">
           CONTACTS
-        </Link>
+        </NavLink>
 
         {/* Hamburger button */}
         <button

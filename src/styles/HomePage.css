@@ -1,15 +1,100 @@
+.hero-section {
+  height: 60vh;
+  padding-top: 8rem;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.hero-section img {
+  width: clamp(15rem, 25vw, 25rem);
+  aspect-ratio: 1 / 1;
+  object-fit: contain;
+}
+
+.hero-desc {
+  width: 100%;
+  max-width: 60rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 1.2rem;
+}
+
+.hero-titel {
+  font-size: 4rem;
+}
+
+.hero-tussentitel {
+  font-family: var(--font-heading-thin);
+  font-size: var(--text-xl);
+  color: var(--color-accent-pink);
+  font-size: var(--text-lg);
+}
+
+.bold-word {
+  color: var(--color-accent-pink);
+  font-weight: bold;
+}
+
+.button {
+  font-family: var(--font-heading-thin);
+  background-color: var(--color-text);
+  color: var(--color-accent-green);
+  padding: 0.5rem 1rem;
+  min-height: 1rem;
+  border: none;
+  cursor: pointer;
+  transition:
+    background-color 0.2s,
+    color 0.2s,
+    transform 0.2s;
+}
+
+.button.active {
+  background-color: var(--color-accent-green);
+  color: var(--color-text);
+  transform: scale(0.96);
+}
+
+.button:hover {
+  background-color: var(--color-accent-green);
+  color: var(--color-text);
+}
 .tech-cards-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(min(100%, 20rem), 1fr));
-  margin: 1.2rem 0;
+  margin: 1rem 0;
   gap: 1rem;
+}
+
+@media (max-width: 768px) {
+  .hero-section {
+    flex-direction: column;
+    height: 90vh;
+    padding-top: 0;
+  }
+  .hero-section img {
+    width: clamp(12rem, 55vw, 20rem);
+    display: block;
+    margin: 0 auto;
+  }
+
+  .hero-desc {
+    align-items: center;
+    text-align: center;
+  }
+
+  .hero-titel {
+    font-size: clamp(2rem, 8vw, 4rem);
+  }
 }
 
 .desc-technologies {
   margin-top: 1.2rem;
-}
-
-.selected-section {
 }
 
 .selected-works-container {
