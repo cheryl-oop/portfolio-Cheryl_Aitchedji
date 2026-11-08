@@ -18,6 +18,7 @@
 :root {
   --space-page-x: clamp(1rem, 4.5vw, 4rem);
   --space-page-y: clamp(2rem, 1rem + 4vw, 4rem);
+
   /* Typography */
   --font-heading: "Integral CF", sans-serif;
   --font-heading-thin: "Integral Thin", sans-serif;

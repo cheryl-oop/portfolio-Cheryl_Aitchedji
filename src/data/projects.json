@@ -4,7 +4,7 @@
     "date": "2025",
     "type": "frontend",
     "name": "Digital Lookbook",
-    "description": "This is a digital wardrobe.",
+    "description": "Ever stare at your closet and think, 'I have nothing to wear'? I wanted to find a fix. It’s a digital wardrobe where users can upload and catalogue their outfits. As a fashion enthusiast, I wanted to solve a personal problem. As a developer, I wanted to learn and build a fun full-stack architecture. So, I wrote a custom backend server in JavaScript, connected it to MongoDB, and kept the frontend strictly to HTML and CSS!",
     "tools": ["Javascript", "CSS", "HTML", "MongoDB"],
     "coverImage": "/images/digital-lookbook-1.png",
     "images": [

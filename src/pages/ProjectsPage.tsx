@@ -34,6 +34,7 @@ export const ProjectsPage = () => {
         <motion.section>
           <div className="projects-page-description">
             <motion.img
+              className="doodle"
               src="/images/doodles/cher-working.jpg"
               alt=""
               initial={{ scale: 0, rotate: -20, opacity: 0 }}

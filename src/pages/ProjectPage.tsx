@@ -16,23 +16,31 @@ export const ProjectPage = () => {
           <h2>{project.name}</h2>
 
           <div className="project-details">
-            <ul className="project-tools">
-              {project.tools.map((tool) => (
-                <li key={tool}>{tool}</li>
-              ))}
-            </ul>
             <p>{project.description}</p>
+
             <div className="project-links">
               {project.website && (
                 <a href={project.website} target="_blank" rel="noreferrer">
-                  Visit website ↗
+                  Visit website
                 </a>
               )}
               {project.githubLink && (
                 <a href={project.githubLink} target="_blank" rel="noreferrer">
-                  GitHub ↗
+                  GitHub
                 </a>
               )}
+            </div>
+
+            <div className="tech-stack-wrapper">
+              <div className="tech-stack-description">
+                <h3>Tech Stack</h3>
+                <ul className="project-tools">
+                  {project.tools.map((tool) => (
+                    <li key={tool}>{tool}</li>
+                  ))}
+                </ul>
+              </div>
+              <img className="doodle" src="/images/doodles/cher-working.jpg" />
             </div>
           </div>
         </div>
