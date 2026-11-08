@@ -1,0 +1,69 @@
+/* Mobile: one column, normal scrolling */
+.project-page-section {
+  display: grid;
+}
+
+.project-page-description {
+  display: flex;
+  flex-direction: column;
+}
+
+.project-page-description h2 {
+  color: var(--color-accent-pink);
+  margin-right: 2rem;
+}
+
+.project-details {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-m);
+  max-width: 32rem;
+}
+
+.project-tools {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.project-details p {
+  margin: 0;
+}
+
+.project-links {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.project-page-description a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.project-images {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.project-images img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* Desktop: fixed text on the left, scrolling images on the right */
+@media (min-width: 900px) {
+  .project-page-section {
+    grid-template-columns: 1fr 1.3fr;
+    gap: var(--space-m);
+    align-items: start; /* required, or sticky has no room to move */
+  }
+
+  .project-page-description {
+    position: sticky;
+    top: var(--space-page-y);
+    justify-content: space-between; /* title top, details middle, next bottom */
+  }
+}

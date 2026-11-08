@@ -25,70 +25,76 @@ export const ProjectsPage = () => {
   return (
     <>
       <Header />
-      <motion.section
-        className="projects-page-section"
+      <motion.div
         initial={{ clipPath: "inset(100% 0% 0% 0%)" }}
         animate={{ clipPath: "inset(0% 0% 0% 0%)" }}
         transition={{ duration: PANEL_DURATION, ease: PANEL_EASE }}
+        className="page-wrapper"
       >
-        <div className="projects-page-description">
-          <motion.img
-            src="/images/placeholder-img.jpg"
-            alt=""
-            initial={{ scale: 0, rotate: -20, opacity: 0 }}
-            animate={{ scale: 1, rotate: 0, opacity: 1 }}
-            transition={{
-              type: "spring",
-              stiffness: 200,
-              damping: 14,
-              delay: START,
-            }}
-          />
-          <AnimatedWords as="h2" text="Projects" delay={START + 0.2} />
-          <AnimatedWords
-            as="p"
-            delay={START + 0.5}
-            text="A selection of my works where I explore different frameworks, challenges and creative solutions"
-          />
-        </div>
+        <motion.section>
+          <div className="projects-page-description">
+            <motion.img
+              src="/images/doodles/cher-working.jpg"
+              alt=""
+              initial={{ scale: 0, rotate: -20, opacity: 0 }}
+              animate={{ scale: 1, rotate: 0, opacity: 1 }}
+              transition={{
+                type: "spring",
+                stiffness: 200,
+                damping: 14,
+                delay: START,
+              }}
+            />
+            <AnimatedWords as="h2" text="Projects" delay={START + 0.2} />
+            <AnimatedWords
+              as="p"
+              delay={START + 0.5}
+              text="A selection of my works where I explore different frameworks, challenges and creative solutions"
+            />
+          </div>
 
-        <div>
-          <motion.div
-            className="filters"
-            initial={{ y: 30, opacity: 0 }}
-            animate={{ y: 0, opacity: 1 }}
-            transition={{ duration: 0.5, ease: "easeOut", delay: START + 0.9 }}
-          >
-            {types.map((type) => (
-              <button
-                key={type}
-                onClick={() => setActiveType(type)}
-                className={type === activeType ? "filter active" : "filter"}
-                aria-pressed={type === activeType}
-              >
-                {type}
-              </button>
-            ))}
-          </motion.div>
+          <div>
+            <motion.div
+              className="filters"
+              initial={{ y: 30, opacity: 0 }}
+              animate={{ y: 0, opacity: 1 }}
+              transition={{
+                duration: 0.5,
+                ease: "easeOut",
+                delay: START + 0.9,
+              }}
+            >
+              {types.map((type) => (
+                <button
+                  key={type}
+                  onClick={() => setActiveType(type)}
+                  className={type === activeType ? "filter active" : "filter"}
+                  aria-pressed={type === activeType}
+                >
+                  {type}
+                </button>
+              ))}
+            </motion.div>
 
-          <motion.div
-            className="project-cards"
-            variants={cardList}
-            initial="hidden"
-            animate="visible"
-          >
-            {filteredProjects.map((project) => (
-              <motion.div
-                key={project.id}
-                variants={fadeUp}
-                className="card-wrapper"
-              >
-                <Projectcard project={project} />
-              </motion.div>
-            ))}
-          </motion.div>
-        </div>
-      </motion.section>
+            <motion.div
+              className="project-cards"
+              variants={cardList}
+              initial="hidden"
+              animate="visible"
+            >
+              {filteredProjects.map((project) => (
+                <motion.div
+                  key={project.id}
+                  variants={fadeUp}
+                  className="card-wrapper"
+                >
+                  <Projectcard project={project} />
+                </motion.div>
+              ))}
+            </motion.div>
+          </div>
+        </motion.section>
+      </motion.div>
     </>
   );
 };

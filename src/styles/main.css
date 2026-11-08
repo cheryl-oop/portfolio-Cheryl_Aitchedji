@@ -1,11 +1,16 @@
 body {
   padding: 0;
   margin: 0;
+  background-color: var(--color-accent-pink);
 }
 
+.page-wrapper {
+  background-color: var(--color-bg);
+}
 section {
-  margin-inline: var(--space-page-x);
-  margin-block: var(--space-page-y);
+  padding-inline: var(--space-page-x);
+  padding-block: var(--space-page-y);
+  background-color: var(--color-bg);
 }
 
 h1,
@@ -13,6 +18,7 @@ h2,
 h3 {
   font-family: var(--font-heading);
   margin: 0;
+  color: var(--color-text);
 }
 
 h4 {
@@ -30,4 +36,47 @@ p {
   margin: 0;
   font-family: var(--font-text);
   font-size: var(--font-base);
+  color: var(--color-text);
+}
+
+button {
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-heading-thin);
+  font-size: var(--text-sm);
+
+  padding: 0.5rem 1rem;
+  min-height: 1rem;
+  border: none;
+  cursor: pointer;
+  transition:
+    background-color 0.2s,
+    color 0.2s,
+    transform 0.2s;
+}
+
+button.active {
+  background-color: var(--color-accent-green);
+  color: var(--color-text);
+}
+
+button:hover {
+  background-color: var(--color-accent-green);
+  color: var(--color-text);
+}
+
+button:active {
+  transform: scale(0.96);
+}
+
+.card-tools {
+  display: flex;
+  gap: 0.5rem;
+}
+.card-tools p {
+  font-family: var(--font-heading-thin);
+  font-size: clamp(0.6rem, 0.5rem + 0.4vw, 0.8rem);
+  background-color: var(--color-text);
+  color: var(--color-bg);
+  padding: clamp(0.2rem, 0.15rem + 0.2vw, 0.3rem);
 }
