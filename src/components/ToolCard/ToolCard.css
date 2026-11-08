@@ -1,0 +1,41 @@
+.tool-card-container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+
+  background-color: var(--color-text); /* Dark background */
+  padding: 1rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* The Image */
+.tool-card-container img {
+  width: 60px;
+  aspect-ratio: 1/1;
+  object-fit: contain;
+  flex-shrink: 0; /* Prevents the image from getting squished if the text gets long */
+}
+
+/* The Text Wrapper */
+.tool-card-desc {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.3rem;
+}
+
+/* The Title */
+.tool-card-desc h5 {
+  margin: 0;
+  color: var(--color-bg);
+  font-size: 1rem;
+}
+
+/* The Description */
+.tool-card-desc p {
+  margin: 4px 0 0 0; /* Small gap between title and description */
+  color: #c1c1c1;
+  font-size: 0.85rem;
+  line-height: 1.2;
+}

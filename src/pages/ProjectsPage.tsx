@@ -1,7 +1,6 @@
 import { projects } from "../data/projects.ts";
 import { Projectcard } from "../components/projectCard/Projectcard.tsx";
 import { useState } from "react";
-import { Header } from "../layouts/Header.tsx";
 import "../styles/projectsPage.css";
 
 import { motion } from "motion/react";
@@ -20,7 +19,6 @@ export const ProjectsPage = () => {
       : projects.filter((p) => p.type === activeType);
   return (
     <>
-      <Header />
       <div className="page-wrapper">
         <section>
           <div className="projects-page-description">
@@ -37,12 +35,11 @@ export const ProjectsPage = () => {
                 delay: START,
               }}
             />
-            <AnimatedWords as="h2" text="Projects" delay={START + 0.2} />
-            <AnimatedWords
-              as="p"
-              delay={START + 0.5}
-              text="A selection of my works where I explore different frameworks, challenges and creative solutions"
-            />
+            <AnimatedWords as="h2" text="Projects" delay={START} />
+            <p>
+              A selection of my works where I explore different frameworks,
+              challenges and creative solutions
+            </p>
           </div>
 
           <div>

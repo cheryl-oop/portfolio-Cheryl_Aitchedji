@@ -1,0 +1,80 @@
+[
+  {
+    "id": "1",
+    "name": "HTML",
+    "description": "Markup Language",
+    "img": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg"
+  },
+  {
+    "id": "2",
+    "name": "CSS",
+    "description": "Styling Language",
+    "img": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg"
+  },
+  {
+    "id": "3",
+    "name": "JavaScript",
+    "description": "Programming Language",
+    "img": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg"
+  },
+  {
+    "id": "4",
+    "name": "TypeScript",
+    "description": "Typed JavaScript",
+    "img": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg"
+  },
+  {
+    "id": "5",
+    "name": "React.js",
+    "description": "Frontend Library",
+    "img": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg"
+  },
+  {
+    "id": "6",
+    "name": "Node.js",
+    "description": "Backend Runtime",
+    "img": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg"
+  },
+  {
+    "id": "7",
+    "name": "PHP",
+    "description": "Backend Language",
+    "img": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/php/php-original.svg"
+  },
+  {
+    "id": "9",
+    "name": "MongoDB",
+    "description": "NoSQL Database",
+    "img": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg"
+  },
+  {
+    "id": "10",
+    "name": "MySQL",
+    "description": "Relational Database",
+    "img": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg"
+  },
+  {
+    "id": "11",
+    "name": "GitHub",
+    "description": "Version Control",
+    "img": "/images/github-icon.png"
+  },
+  {
+    "id": "12",
+    "name": "Render",
+    "description": "Cloud Hosting",
+    "img": "/images/render-icon.jpg"
+  },
+  {
+    "id": "13",
+    "name": "Railway",
+    "description": "Cloud Hosting",
+    "img": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/railway/railway-original.svg"
+  },
+  {
+    "id": "14",
+    "name": "Figma",
+    "description": "Design Tool",
+    "img": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg"
+  }
+]

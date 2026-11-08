@@ -21,7 +21,8 @@
 }
 
 .projects-page-description p {
-  max-width: 50rem;
+  width: 100%;
+  max-width: 30rem;
   padding: clamp(2rem, 2vw, 4rem);
 }
 
