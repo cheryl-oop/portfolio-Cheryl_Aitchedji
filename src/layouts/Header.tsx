@@ -50,7 +50,7 @@ export const Header = () => {
           <Link to="/projects" onClick={closeMenu}>
             PROJECTS
           </Link>
-          <Link to="/about" onClick={closeMenu}>
+          <Link to="/about-me" onClick={closeMenu}>
             ABOUT ME
           </Link>
           <Link to="/contacts" onClick={closeMenu}>

@@ -3,10 +3,8 @@ import { getProjectById } from "../data/projects";
 import "../styles/projectPage.css";
 
 import { motion } from "motion/react";
-import { AnimatedWords } from "../components/animations/AnimatedWords.tsx";
 import { Reveal } from "../components/animations//Reveal.tsx";
 import { START } from "../components/animations/timing.ts";
-import { fadeUp } from "../components/animations//variants.ts";
 
 export const ProjectPage = () => {
   const { id } = useParams<{ id: string }>();
