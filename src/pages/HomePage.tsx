@@ -4,9 +4,9 @@ import { tools } from "../data/tools.ts";
 import { fadeUp } from "../components/animations/variants.ts";
 import { AnimatedWords } from "../components/animations/AnimatedWords.tsx";
 import { START } from "../components/animations/timing.ts";
-import "../styles/Homepage.css";
 import { SelectedWorks } from "./SelectedWorks.tsx";
 import { Link } from "react-router";
+import "../styles/HomePage.css";
 
 export const HomePage = () => {
   return (

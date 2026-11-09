@@ -1,10 +1,10 @@
 import { useParams, Navigate } from "react-router";
 import { getProjectById } from "../data/projects";
-import "../styles/projectPage.css";
 
 import { motion } from "motion/react";
 import { Reveal } from "../components/animations//Reveal.tsx";
 import { START } from "../components/animations/timing.ts";
+import "../styles/ProjectPage.css";
 
 export const ProjectPage = () => {
   const { id } = useParams<{ id: string }>();
