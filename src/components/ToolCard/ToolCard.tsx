@@ -1,5 +1,6 @@
 import type { Tool } from "../../data/tools.ts";
 import "./ToolCard.css";
+import { asset } from "../../utils/assets.ts";
 
 type ToolCardProps = {
   tool: Pick<Tool, "id" | "name" | "description" | "img">;
@@ -8,7 +9,7 @@ type ToolCardProps = {
 export const ToolCard = ({ tool }: ToolCardProps) => {
   return (
     <div className="tool-card-container">
-      <img src={tool.img} alt={`${tool.name} logo`} />
+      <img src={asset(tool.img)} alt={`${tool.name} logo`} />
       <div className="tool-card-desc">
         <h5>{tool.name}</h5>
         <p>{tool.description}</p>

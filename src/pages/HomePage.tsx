@@ -60,6 +60,9 @@ export const HomePage = () => {
       <section className="selected-section">
         <h3>Selected Works</h3>
         <SelectedWorks />
+        <Link to="/" className="button">
+          See More Works
+        </Link>
       </section>
     </div>
   );
