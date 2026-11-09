@@ -85,7 +85,7 @@
   .image-scribble {
     position: absolute;
     right: -5%;
-    bottom: -20%;
+    bottom: -15%;
     width: 60%;
     z-index: 2;
     pointer-events: none;

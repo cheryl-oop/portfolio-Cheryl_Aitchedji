@@ -7,6 +7,7 @@ import { motion } from "motion/react";
 import { AnimatedWords } from "../components/animations/AnimatedWords.tsx";
 import { START } from "../components/animations/timing.ts";
 import { fadeUp, cardList } from "../components/animations/variants.ts";
+import { asset } from "../utils/assets.ts";
 
 const types = ["All", ...new Set(projects.map((p) => p.type))];
 
@@ -24,7 +25,7 @@ export const ProjectsPage = () => {
           <div className="projects-page-description">
             <motion.img
               className="doodle"
-              src="/images/doodles/cher-working.jpg"
+              src={asset("/images/doodles/cher-working.jpg")}
               alt=""
               initial={{ scale: 0, rotate: -20, opacity: 0 }}
               animate={{ scale: 1, rotate: 0, opacity: 1 }}

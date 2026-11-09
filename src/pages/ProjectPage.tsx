@@ -5,6 +5,7 @@ import { motion } from "motion/react";
 import { Reveal } from "../components/animations//Reveal.tsx";
 import { START } from "../components/animations/timing.ts";
 import "../styles/ProjectPage.css";
+import { asset } from "../utils/assets.ts";
 
 export const ProjectPage = () => {
   const { id } = useParams<{ id: string }>();
@@ -60,7 +61,7 @@ export const ProjectPage = () => {
               </Reveal>
               <motion.img
                 className="doodle"
-                src="/images/doodles/cher-working.jpg"
+                src={asset("/images/doodles/cher-working.jpg")}
                 alt=""
                 initial={{ scale: 0, rotate: -20, opacity: 0 }}
                 animate={{ scale: 1, rotate: 0, opacity: 1 }}
@@ -80,7 +81,7 @@ export const ProjectPage = () => {
             {project.images.map((src, i) => (
               <motion.img
                 key={src}
-                src={src}
+                src={asset(src)}
                 alt={`${project.name} screenshot ${i + 1}`}
                 loading="lazy"
                 initial={{ y: 60, opacity: 0 }}

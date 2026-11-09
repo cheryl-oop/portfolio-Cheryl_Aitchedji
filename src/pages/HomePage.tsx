@@ -7,13 +7,14 @@ import { START } from "../components/animations/timing.ts";
 import { SelectedWorks } from "./SelectedWorks.tsx";
 import { Link } from "react-router";
 import "../styles/HomePage.css";
+import { asset } from "../utils/assets.ts";
 
 export const HomePage = () => {
   return (
     <div className="page-wrapper">
       <section className="hero-section">
         <motion.img
-          src="/images/doodles/cher-hi.jpg"
+          src={asset("/images/doodles/cher-hi.jpg")}
           alt=""
           initial={{ scale: 0, rotate: -20, opacity: 0 }}
           animate={{ scale: 1, rotate: 0, opacity: 1 }}

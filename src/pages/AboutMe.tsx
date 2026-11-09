@@ -2,6 +2,7 @@ import "../styles/AboutMe.css";
 import { motion } from "motion/react";
 import { AnimatedWords } from "../components/animations/AnimatedWords.tsx";
 import { START } from "../components/animations/timing.ts";
+import { asset } from "../utils/assets.ts";
 
 export const AboutMe = () => {
   return (
@@ -10,7 +11,7 @@ export const AboutMe = () => {
         <div className="image-section">
           <motion.img
             className="image-main"
-            src="/images/doodles/cher.jpeg"
+            src={asset("/images/doodles/cher.jpeg")}
             alt="Cheryl with her figurine"
             initial={{ clipPath: "inset(100% 0% 0% 0%)", scale: 1.1 }}
             animate={{ clipPath: "inset(0% 0% 0% 0%)", scale: 1 }}
@@ -22,7 +23,7 @@ export const AboutMe = () => {
           />
           <motion.img
             className="image-doodle-top"
-            src="/images/doodles/cher-hi-trans.png"
+            src={asset("/images/doodles/cher-hi-trans.png")}
             alt=""
             initial={{ scale: 0, rotate: -25, opacity: 0 }}
             animate={{ scale: 1, rotate: 0, opacity: 1 }}
@@ -35,7 +36,7 @@ export const AboutMe = () => {
           />
           <motion.img
             className="image-scribble"
-            src="/images/doodles/scribble.png"
+            src={asset("/images/doodles/scribble.png")}
             alt=""
             initial={{ clipPath: "inset(0% 100% 0% 0%)" }}
             animate={{ clipPath: "inset(0% 0% 0% 0%)" }}
