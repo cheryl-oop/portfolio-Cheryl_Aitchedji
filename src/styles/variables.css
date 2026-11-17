@@ -19,6 +19,13 @@
   --space-page-x: clamp(1rem, 4.5vw, 4rem);
   --space-page-y: clamp(2rem, 1rem + 4vw, 4rem);
 
+  --space-xs: clamp(0.5rem, 0.4rem + 0.3vw, 0.75rem);
+  --space-s: clamp(0.75rem, 0.6rem + 0.5vw, 1.25rem);
+  --space-m: clamp(1.25rem, 1rem + 1vw, 2rem);
+  --space-l: clamp(2rem, 1.5rem + 2.5vw, 4rem);
+  --space-xl: clamp(3rem, 2rem + 5vw, 7rem);
+  --header-height: clamp(2rem, 1.5rem + 2.5vw, 4rem);
+
   /* Typography */
   --font-heading: "Integral CF", sans-serif;
   --font-heading-thin: "Integral Thin", sans-serif;
@@ -28,7 +35,7 @@
   --text-base: clamp(1rem, 0.9rem + 0.3vw, 1.125rem);
   --text-lg: clamp(1.125rem, 1rem + 0.5vw, 1.5rem);
   --text-xl: clamp(1.5rem, 1.2rem + 1.5vw, 2.5rem);
-  --text-hero: clamp(3rem, 2rem + 5vw, 7rem);
+  --text-hero: clamp(2.5rem, 1.5rem + 5vw, 6rem);
 
   /* Colors */
   --color-bg: #ffffff;

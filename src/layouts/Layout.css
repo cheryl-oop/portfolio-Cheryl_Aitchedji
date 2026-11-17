@@ -5,3 +5,12 @@
   overscroll-behavior: contain;
   background: var(--color-bg);
 }
+
+.page-content {
+  max-width: 95rem;
+  margin-inline: auto;
+  padding-top: calc(var(--header-height) + var(--space-page-y));
+  padding-inline: var(--space-page-x);
+  padding-bottom: var(--space-page-y);
+  overflow-x: clip;
+}

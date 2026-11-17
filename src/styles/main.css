@@ -8,9 +8,8 @@ body {
   background-color: var(--color-bg);
 }
 section {
-  padding-inline: var(--space-page-x);
-  padding-block: var(--space-page-y);
   background-color: var(--color-bg);
+  padding: var(--space-m) var(--space-s);
 }
 
 h1,

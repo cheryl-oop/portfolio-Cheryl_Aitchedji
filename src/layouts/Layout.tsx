@@ -24,7 +24,7 @@ export const Layout = () => {
             zIndex: { duration: 0 },
           }}
         >
-          {outlet}
+          <div className="page-content">{outlet}</div>
         </motion.div>
       </AnimatePresence>
     </>

@@ -1,12 +1,13 @@
 /* Mobile: one column, normal scrolling */
 .project-page-section {
   display: grid;
+  gap: var(--space-page-y);
 }
 
 .project-page-description {
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: var(--space-page-m);
 }
 
 .tech-stack-wrapper {
@@ -17,6 +18,7 @@
 
 .project-page-description h2 {
   color: var(--color-accent-pink);
+  padding: var(--space-s) 0;
 }
 
 .project-details {
@@ -73,7 +75,7 @@
 }
 
 .tech-stack-description ul {
-  margin-top: 1rem;
+  margin-top: var(--space-page-m);
   font-weight: bold;
 }
 
@@ -83,8 +85,14 @@
   color: var(--color-text);
 }
 
+.doodle-projectpage {
+  width: clamp(8rem, 13vw, 10rem);
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  display: block;
+}
+
 .project-images {
-  margin-top: 2rem;
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
@@ -97,17 +105,18 @@
   height: auto;
 }
 
-/* Desktop: fixed text on the left, scrolling images on the right */
-@media (min-width: 900px) {
+@media (min-width: 961px) {
   .project-page-section {
-    grid-template-columns: 1fr 1.3fr;
+    grid-template-columns: 1fr 1fr;
     gap: 1.5rem;
-    align-items: start; /* required, or sticky has no room to move */
+    align-items: start;
   }
 
   .project-page-description {
     position: sticky;
-    top: var(--space-page-y);
-    justify-content: space-between; /* title top, details middle, next bottom */
+    top: calc(
+      var(--space-page-y) + calc(var(--header-height) + var(--space-page-y))
+    );
+    justify-content: space-between;
   }
 }
