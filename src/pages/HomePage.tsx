@@ -50,7 +50,7 @@ export const HomePage = () => {
               More about me
             </Link>
             <a
-              href="/documents/Cheryl_Aitchedji_CV.pdf"
+              href={asset("documents/Cheryl_Aitchedji_CV.pdf")}
               download="Cheryl_Aitchedji_CV.pdf"
               className="cv"
             >
@@ -62,14 +62,16 @@ export const HomePage = () => {
       </section>
 
       <section className="selected-section">
-        <h3>Selected Works</h3>
-        <SelectedWorks />
-        <Link to="/" className="button">
+        <h3 className="selected-title">Selected Works</h3>
+        <div className="selected-list">
+          <SelectedWorks />
+        </div>
+        <Link to="/projects" className="button selected-more">
           See More Works
         </Link>
       </section>
       <section className="tech-section">
-        <h3>Current technologies</h3>
+        <h3>My Tech Stack</h3>
         <p className="desc-technologies">
           Current technologies I use for my projects
         </p>
@@ -80,6 +82,31 @@ export const HomePage = () => {
             </motion.div>
           ))}
         </div>
+      </section>
+      <section id="contact" className="contact">
+        <div className="contact-info">
+          <h3>Lets make something happen.</h3>
+          <p>
+            I'm currently looking for{" "}
+            <span className="bold-word">an internship</span> and would love to
+            connect with you.
+          </p>
+          <div className="contact-links">
+            <a className="button" href="mailto:cheryl.aitchedji@gmail.com.com">
+              Get in touch
+            </a>
+            <a
+              className="button"
+              href="https://github.com/cheryl-oop/cheryl-oop.git"
+            >
+              Github
+            </a>
+            <a className="button" href="mailto:cheryl.aitchedji@gmail.com.com">
+              Linkdin
+            </a>
+          </div>
+        </div>
+        <img src={asset("/images/doodles/cher-mail.svg")} />
       </section>
     </>
   );

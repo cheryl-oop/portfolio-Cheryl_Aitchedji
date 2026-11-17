@@ -74,6 +74,10 @@
   transform: scale(0.96);
 }
 
+.tech-stack-description h3 {
+  margin-bottom: var(--space-s);
+}
+
 .tech-stack-description ul {
   margin-top: var(--space-page-m);
   font-weight: bold;

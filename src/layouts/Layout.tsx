@@ -2,6 +2,8 @@ import { useLocation, useOutlet } from "react-router";
 import { AnimatePresence, motion } from "motion/react";
 import { PANEL_DURATION, PANEL_EASE } from "../components/animations/timing.ts";
 import { Header } from "./Header.tsx";
+
+import ScrollToHash from "../utils/ScrollToHash";
 import "./Layout.css";
 
 export const Layout = () => {
@@ -10,6 +12,7 @@ export const Layout = () => {
 
   return (
     <>
+      <ScrollToHash />
       <Header />
       <AnimatePresence>
         <motion.div

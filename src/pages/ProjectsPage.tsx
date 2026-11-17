@@ -8,6 +8,7 @@ import { AnimatedWords } from "../components/animations/AnimatedWords.tsx";
 import { START } from "../components/animations/timing.ts";
 import { fadeUp, cardList } from "../components/animations/variants.ts";
 import { asset } from "../utils/assets.ts";
+import { Footer } from "../layouts/Footer.tsx";
 
 const types = ["All", ...new Set(projects.map((p) => p.type))];
 
@@ -80,6 +81,7 @@ export const ProjectsPage = () => {
             </motion.div>
           ))}
         </motion.div>
+        <Footer />
       </section>
     </>
   );

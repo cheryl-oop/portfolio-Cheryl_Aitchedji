@@ -42,6 +42,12 @@
     "img": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/php/php-original.svg"
   },
   {
+    "id": "15",
+    "name": "Laravel",
+    "description": "PHP Framework",
+    "img": "/images/laravel.svg"
+  },
+  {
     "id": "9",
     "name": "MongoDB",
     "description": "NoSQL Database",
@@ -53,12 +59,7 @@
     "description": "Relational Database",
     "img": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg"
   },
-  {
-    "id": "11",
-    "name": "GitHub",
-    "description": "Version Control",
-    "img": "/images/github-icon.png"
-  },
+
   {
     "id": "12",
     "name": "Render",
@@ -70,6 +71,12 @@
     "name": "Railway",
     "description": "Cloud Hosting",
     "img": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/railway/railway-original.svg"
+  },
+  {
+    "id": "11",
+    "name": "GitHub",
+    "description": "Version Control",
+    "img": "/images/github-icon.png"
   },
   {
     "id": "14",

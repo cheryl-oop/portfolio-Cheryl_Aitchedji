@@ -3,10 +3,11 @@ import { motion } from "motion/react";
 import { AnimatedWords } from "../components/animations/AnimatedWords.tsx";
 import { START } from "../components/animations/timing.ts";
 import { asset } from "../utils/assets.ts";
+import { Footer } from "../layouts/Footer.tsx";
 
 export const AboutMe = () => {
   return (
-    <div className="page-wrapper">
+    <>
       <section className="aboutme-section">
         <div className="image-section">
           <motion.img
@@ -50,26 +51,42 @@ export const AboutMe = () => {
         <div className="aboutme-description">
           <AnimatedWords as="h2" text="Heya" delay={START + 0.3} />
           <p>
-            I’m a creative problem solver who believes the best digital
-            experiences happen when design and logic meet. I work across the
-            stack—from building responsive UIs with React and TypeScript to
-            architecting backends with Node.js, PHP, and MongoDB.
+            I'm a final-year multimedia student from Brussels with a passion for
+            combining creativity and technology. I enjoy turning ideas and
+            problems into fun solutions! I work across the stack, building
+            responsive interfaces with React and TypeScript and developing
+            backend solutions with Node.js, PHP and MongoDB.
+          </p>
+
+          <p>
+            I'm currently looking for an webdevelopment internship where I can
+            put my skills into practice, contribute to meaningful projects and
+            learn from experienced developers. I'm excited to take on new
+            challenges and continue growing as a full-stack developer.
           </p>
           <h3>How I work:</h3>
           <p>
-            Because I’ve acted as a Product Owner and SPOC in team projects, I
-            don't just write code; I know how to communicate with clients,
-            manage deadlines, and keep a team aligned. I’m an independent
-            learner who loves finding creative solutions (usually fueled by a
-            lot of tea).
+            I enjoy more than just writing code. Through taking on Product Owner
+            and SPOC responsibilities in team projects, I've learned the
+            importance of communication, collaboration and keeping everyone on
+            the same page. I'm an independent learner who enjoys exploring new
+            technologies and finding creative ways to solve problems (usually
+            fueled by a lot of tea).
           </p>
           <p>
             Offline: I’m a native Dutch and French speaker (with fluent
             English!), and when I’m not coding, you’ll find me painting,
             cooking, gaming, or lifting weights at the gym.
           </p>
+          <h3>Beyond the screen</h3>
+          <p>
+            I'm a native Dutch and French speaker, fluent in English, and a
+            creative at heart. When I'm not coding, you'll probably find me
+            painting, cooking, gaming or lifting weights at the gym.
+          </p>
         </div>
       </section>
-    </div>
+      <Footer />
+    </>
   );
 };

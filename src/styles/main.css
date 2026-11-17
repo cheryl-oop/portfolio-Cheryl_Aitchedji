@@ -1,7 +1,15 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.contact {
+  scroll-margin-top: 100px;
+}
+
 body {
   padding: 0;
   margin: 0;
-  background-color: var(--color-accent-pink);
+  background-color: #d1d1d1;
 }
 
 .page-wrapper {

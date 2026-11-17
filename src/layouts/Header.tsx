@@ -21,7 +21,7 @@ export const Header = () => {
           <NavLink to="/about-me">ABOUT ME</NavLink>
         </nav>
 
-        <NavLink to="/contacts" className="desktop-contact">
+        <NavLink to="/#contact" className="desktop-contact">
           CONTACTS
         </NavLink>
 
@@ -53,7 +53,7 @@ export const Header = () => {
           <Link to="/about-me" onClick={closeMenu}>
             ABOUT ME
           </Link>
-          <Link to="/contacts" onClick={closeMenu}>
+          <Link to="/#contact" onClick={closeMenu}>
             CONTACTS
           </Link>
         </div>
