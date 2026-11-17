@@ -11,11 +11,12 @@ import { asset } from "../utils/assets.ts";
 
 export const HomePage = () => {
   return (
-    <div className="page-wrapper">
+    <>
       <section className="hero-section">
         <motion.img
           src={asset("/images/doodles/cher-hi.svg")}
-          alt=""
+          alt="doodle of me"
+          className="hero-image"
           initial={{ scale: 0, rotate: -20, opacity: 0 }}
           animate={{ scale: 1, rotate: 0, opacity: 1 }}
           transition={{
@@ -26,28 +27,51 @@ export const HomePage = () => {
           }}
         />
         <div className="hero-desc">
+          <h4 className="mini-titel">Full Stack Web Developer</h4>
           <AnimatedWords
             as="h2"
             className="hero-titel"
             text="Hi, Cheryl here"
             delay={START + 0.2}
           />
-          <h3 className="hero-tussentitel">
-            Final year multimedia student from Brussels
-          </h3>
+          <div className="location">
+            <img
+              className="location-icon"
+              src={asset("/images/doodles/location_on.svg")}
+            />
+            <p>Brussels, Belgium</p>
+          </div>
           <p className="hero-desc-p">
             I build <span className="bold-word">full-stack websites</span> as
             creative solutions to weird problems. (And normal problems, too)
           </p>
-          <Link to="/" className="button">
-            More about me
-          </Link>
+          <div className="hero-links">
+            <Link to="/about-me" className="button">
+              More about me
+            </Link>
+            <a
+              href="/documents/Cheryl_Aitchedji_CV.pdf"
+              download="Cheryl_Aitchedji_CV.pdf"
+              className="cv"
+            >
+              <img src={asset("/images/doodles/download.svg")} />
+              Download CV
+            </a>
+          </div>
         </div>
+      </section>
+
+      <section className="selected-section">
+        <h3>Selected Works</h3>
+        <SelectedWorks />
+        <Link to="/" className="button">
+          See More Works
+        </Link>
       </section>
       <section className="tech-section">
         <h3>Current technologies</h3>
         <p className="desc-technologies">
-          My current technologies I use for my projects
+          Current technologies I use for my projects
         </p>
         <div className="tech-cards-container">
           {tools.map((tool) => (
@@ -57,13 +81,6 @@ export const HomePage = () => {
           ))}
         </div>
       </section>
-      <section className="selected-section">
-        <h3>Selected Works</h3>
-        <SelectedWorks />
-        <Link to="/" className="button">
-          See More Works
-        </Link>
-      </section>
-    </div>
+    </>
   );
 };

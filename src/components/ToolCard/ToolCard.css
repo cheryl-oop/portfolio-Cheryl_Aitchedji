@@ -3,7 +3,7 @@
   align-items: center;
   gap: 1rem;
 
-  background-color: var(--color-text); /* Dark background */
+  background-color: var(--color-text); 
   padding: 1rem;
   width: 100%;
   box-sizing: border-box;
@@ -14,7 +14,7 @@
   width: 60px;
   aspect-ratio: 1/1;
   object-fit: contain;
-  flex-shrink: 0; /* Prevents the image from getting squished if the text gets long */
+  flex-shrink: 0; 
 }
 
 /* The Text Wrapper */
@@ -34,7 +34,7 @@
 
 /* The Description */
 .tool-card-desc p {
-  margin: 4px 0 0 0; /* Small gap between title and description */
+  margin: 4px 0 0 0; 
   color: #c1c1c1;
   font-size: 0.85rem;
   line-height: 1.2;
