@@ -13,37 +13,35 @@ export const HomePage = () => {
   return (
     <div className="page-wrapper">
       <section className="hero-section">
-        <div className="hero-wrapper">
-          <motion.img
-            src={asset("/images/doodles/cher-hi.jpg")}
-            alt=""
-            initial={{ scale: 0, rotate: -20, opacity: 0 }}
-            animate={{ scale: 1, rotate: 0, opacity: 1 }}
-            transition={{
-              type: "spring",
-              stiffness: 200,
-              damping: 14,
-              delay: START,
-            }}
+        <motion.img
+          src={asset("/images/doodles/cher-hi.svg")}
+          alt=""
+          initial={{ scale: 0, rotate: -20, opacity: 0 }}
+          animate={{ scale: 1, rotate: 0, opacity: 1 }}
+          transition={{
+            type: "spring",
+            stiffness: 200,
+            damping: 14,
+            delay: START,
+          }}
+        />
+        <div className="hero-desc">
+          <AnimatedWords
+            as="h2"
+            className="hero-titel"
+            text="Hi, Cheryl here"
+            delay={START + 0.2}
           />
-          <div className="hero-desc">
-            <AnimatedWords
-              as="h2"
-              className="hero-titel"
-              text="Hi, Cheryl here"
-              delay={START + 0.2}
-            />
-            <h3 className="hero-tussentitel">
-              Final year multimedia student from Brussels
-            </h3>
-            <p className="hero-desc-p">
-              I build <span className="bold-word">full-stack websites</span> as
-              creative solutions to weird problems. (And normal problems, too)
-            </p>
-            <Link to="/" className="button">
-              More about me
-            </Link>
-          </div>
+          <h3 className="hero-tussentitel">
+            Final year multimedia student from Brussels
+          </h3>
+          <p className="hero-desc-p">
+            I build <span className="bold-word">full-stack websites</span> as
+            creative solutions to weird problems. (And normal problems, too)
+          </p>
+          <Link to="/" className="button">
+            More about me
+          </Link>
         </div>
       </section>
       <section className="tech-section">
