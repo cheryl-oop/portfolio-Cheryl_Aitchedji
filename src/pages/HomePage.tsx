@@ -101,7 +101,10 @@ export const HomePage = () => {
             >
               Github
             </a>
-            <a className="button" href="mailto:cheryl.aitchedji@gmail.com.com">
+            <a
+              className="button"
+              href="https://www.linkedin.com/in/cheryl-aitchedji/"
+            >
               Linkdin
             </a>
           </div>
