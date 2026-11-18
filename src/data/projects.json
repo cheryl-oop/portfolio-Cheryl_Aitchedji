@@ -4,7 +4,7 @@
     "date": "2025",
     "type": "frontend",
     "name": "Digital Lookbook",
-    "description": "Ever stare at your closet and think, 'I have nothing to wear'? I wanted to find a fix. It’s a digital wardrobe where users can upload and catalogue their outfits. As a fashion enthusiast, I wanted to solve a personal problem. As a developer, I wanted to learn and build a fun full-stack architecture. So, I wrote a custom backend server in JavaScript, connected it to MongoDB, and kept the frontend strictly to HTML and CSS!",
+    "description": "Ever stare at your closet and think, 'I have nothing to wear'? I wanted to find a fix. It’s a digital wardrobe where users can upload and catalogue their outfits. As a fashion enthusiast, I wanted to solve a personal problem. As a developer, I wanted to learn and build a fun full-stack architecture. So, I wrote a custom backend server in JavaScript, connected it to MongoDB, and kept the frontend strictly to HTML and CSS! This is one of my older projects, but it taught me a lot about how frontend, backend and database connections actually fit together.",
     "tools": ["Javascript", "CSS", "HTML", "MongoDB"],
     "coverImage": "/images/digilo-mockup.jpg",
     "images": [
@@ -20,23 +20,27 @@
     "date": "2026",
     "type": "backend",
     "name": "Hobbyhub",
-    "description": "A streaming platform.",
+    "description": "HobbyHub is a platform for discovering, saving and organizing tutorials across creative and technical hobbies, from 3D modeling to baking. Users can build personalized learning roadmaps and track the hobbies they want to try or improve.I built it to understand how PHP handles the full flow routing, database relationships and rendering pages. I also learned my way around Laravel's MVC structure!",
     "tools": ["PHP", "Blade", "Laravel", "CSS"],
-    "coverImage": "/images/digital-lookbook-1.png",
-    "images": ["/images/digital-lookbook-1.png"],
-    "website": "https://cheryl-oop.github.io/digital-lookbook-frontend/",
-    "githubLink": "https://github.com/cheryl-oop/digital-lookbook-frontend"
+    "coverImage": "/images/hobbyhub-1.png",
+    "images": [
+      "/images/hobbyhub-1.png",
+      "/images/hobbyhub-2.png",
+      "/images/hobbyhub-3.png"
+    ],
+    "website": "https://hobbyhub-streamplatform.up.railway.app/",
+    "githubLink": "https://github.com/cheryl-oop/HobbyHub.git"
   },
   {
     "id": "3",
     "date": "2026",
-    "type": "backend",
-    "name": "TEST",
-    "description": "A streaming platform.",
+    "type": "frontend",
+    "name": "Happily Ever After",
+    "description": "An interactive storytelling website inspired by Hans Christian Andersen's fairytale The Little Mermaid, brought to life through parallax scrolling, animations and custom-made assets. It also includes a portal page that gathers and showcases all student projects from the And They Lived Happily Ever After assignment. I built it to get a better understanding of React and how components, state and interactivity fit together in a real project.",
     "tools": ["PHP", "Blade", "Laravel", "CSS"],
-    "coverImage": "/images/digital-lookbook-1.png",
-    "images": ["/images/digital-lookbook-1.png"],
-    "website": "https://cheryl-oop.github.io/digital-lookbook-frontend/",
-    "githubLink": "https://github.com/cheryl-oop/digital-lookbook-frontend"
+    "coverImage": "/images/ha-1.png",
+    "images": ["/images/ha-1.png", "/images/ha-2.png", "/images/ha-4.png"],
+    "website": "https://ehb-mct.github.io/FrontEnd-Little_Mermaid-Cheryl_Aitchedji/littleMermaidPage",
+    "githubLink": "https://github.com/cheryl-oop/little-mermaid-parallax.git"
   }
 ]
