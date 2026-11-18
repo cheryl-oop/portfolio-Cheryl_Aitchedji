@@ -6,12 +6,8 @@
     "name": "Digital Lookbook",
     "description": "Ever stare at your closet and think, 'I have nothing to wear'? I wanted to find a fix. It’s a digital wardrobe where users can upload and catalogue their outfits. As a fashion enthusiast, I wanted to solve a personal problem. As a developer, I wanted to learn and build a fun full-stack architecture. So, I wrote a custom backend server in JavaScript, connected it to MongoDB, and kept the frontend strictly to HTML and CSS! This is one of my older projects, but it taught me a lot about how frontend, backend and database connections actually fit together.",
     "tools": ["Javascript", "CSS", "HTML", "MongoDB"],
-    "coverImage": "/images/digilo-mockup.jpg",
-    "images": [
-      "/images/digilo-mockup.jpg",
-      "/images/digital-lookbook-1.png",
-      "/images/digital-lookbook-1.png"
-    ],
+    "coverImage": "/images/dg-1.png",
+    "images": ["/images/dg-1.png", "/images/dg-2.png", "/images/dg-3.png"],
     "website": "https://cheryl-oop.github.io/digital-lookbook-frontend/",
     "githubLink": "https://github.com/cheryl-oop/digital-lookbook-frontend"
   },
