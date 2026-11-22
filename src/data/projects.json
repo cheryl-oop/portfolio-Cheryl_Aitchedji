@@ -2,10 +2,10 @@
   {
     "id": "1",
     "date": "2025",
-    "type": "frontend",
+    "type": ["design", "frontend", "backend"],
     "name": "Digital Lookbook",
-    "description": "Ever stare at your closet and think, 'I have nothing to wear'? I wanted to find a fix. It’s a digital wardrobe where users can upload and catalogue their outfits. As a fashion enthusiast, I wanted to solve a personal problem. As a developer, I wanted to learn and build a fun full-stack architecture. So, I wrote a custom backend server in JavaScript, connected it to MongoDB, and kept the frontend strictly to HTML and CSS! This is one of my older projects, but it taught me a lot about how frontend, backend and database connections actually fit together.",
-    "tools": ["Javascript", "CSS", "HTML", "MongoDB"],
+    "description": "Ever stare at your closet and think, 'I have nothing to wear'? I wanted to find a fix! It’s a digital wardrobe where users can upload and catalogue their outfits. As a fashion enthusiast, I wanted to solve a personal problem. As a developer, I wanted to learn and build a fun full-stack architecture. So, I wrote a custom backend server in JavaScript, connected it to MongoDB, and kept the frontend strictly to HTML and CSS! This is one of my older projects, but it taught me a lot about how frontend, backend and database connections actually fit together. This is an older project I'm still fond of!",
+    "tools": ["html", "css", "Javascript", "Node.js", "Express.js", "MongoDB"],
     "coverImage": "/images/dg-1.png",
     "images": ["/images/dg-1.png", "/images/dg-2.png", "/images/dg-3.png"],
     "website": "https://cheryl-oop.github.io/digital-lookbook-frontend/",
@@ -14,7 +14,7 @@
   {
     "id": "2",
     "date": "2026",
-    "type": "backend",
+    "type": ["frontend", "backend"],
     "name": "Hobbyhub",
     "description": "HobbyHub is a platform for discovering, saving and organizing tutorials across creative and technical hobbies, from 3D modeling to baking. Users can build personalized learning roadmaps and track the hobbies they want to try or improve.I built it to understand how PHP handles the full flow routing, database relationships and rendering pages. I also learned my way around Laravel's MVC structure!",
     "tools": ["PHP", "Blade", "Laravel", "CSS"],
@@ -30,13 +30,41 @@
   {
     "id": "3",
     "date": "2026",
-    "type": "frontend",
+    "type": ["frontend", "design"],
     "name": "Happily Ever After",
     "description": "An interactive storytelling website inspired by Hans Christian Andersen's fairytale The Little Mermaid, brought to life through parallax scrolling, animations and custom-made assets. It also includes a portal page that gathers and showcases all student projects from the And They Lived Happily Ever After assignment. I built it to get a better understanding of React and how components, state and interactivity fit together in a real project.",
-    "tools": ["PHP", "Blade", "Laravel", "CSS"],
+    "tools": [
+      "React",
+      "Css",
+      "Javascript",
+      "Motion Framer",
+      "Figma",
+      "Adobe Illustrator"
+    ],
     "coverImage": "/images/ha-1.png",
     "images": ["/images/ha-1.png", "/images/ha-2.png", "/images/ha-4.png"],
     "website": "https://ehb-mct.github.io/FrontEnd-Little_Mermaid-Cheryl_Aitchedji/littleMermaidPage",
     "githubLink": "https://github.com/cheryl-oop/little-mermaid-parallax.git"
+  },
+  {
+    "id": "4",
+    "date": "2024",
+    "type": ["design"],
+    "name": "GIGI Films",
+    "description": "A client website for GIGIFILMS, a casting and production company. The site lets them post casting calls, show off their actors, and display their projects all in one place. I built it alongside four other students, taking care of the web design and frontend development. It was my first-ever client project, and they were really happy with how it turned out. (Project no longer hosted)",
+    "tools": ["Figma", "Adobe Photoshop"],
+    "coverImage": "/images/gigi-1.png",
+    "images": [
+      "/images/gigi-1.png",
+      "/images/gigi-2.png",
+      "/images/gigi-3.png",
+      "/images/gigi-4.png",
+      "/images/gigi-5.png",
+      "/images/gigi-6.png",
+      "/images/gigi-7.png",
+      "/images/gigi-8.png"
+    ],
+    "website": "",
+    "githubLink": ""
   }
 ]

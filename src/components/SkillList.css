@@ -1,0 +1,46 @@
+.skills-section {
+  display: grid;
+  gap: var(--space-m);
+}
+
+.skills-heading {
+  margin: 0;
+}
+
+.skills-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.skill-row {
+  display: grid;
+  gap: var(--space-xs);
+  padding-block: var(--space-m);
+  border-bottom: 1.5px solid var(--color-accent-pink);
+}
+
+.desc-technologies {
+  margin: 0;
+}
+
+.skill-title {
+  margin: 0;
+  font-size: var(--text-lg);
+  line-height: 1.1;
+}
+
+.skill-items {
+  margin: 0;
+  font-size: var(--text-sm);
+  line-height: 1.5;
+}
+
+/* Tablet and up: title left, skills right */
+@media (min-width: 769px) {
+  .skill-row {
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    padding-block: var(--space-l);
+  }
+}

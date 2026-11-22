@@ -92,7 +92,7 @@
 .doodle-projectpage {
   width: clamp(8rem, 13vw, 10rem);
   aspect-ratio: 1 / 1;
-  object-fit: cover;
+
   display: block;
 }
 

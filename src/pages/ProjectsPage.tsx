@@ -10,7 +10,7 @@ import { fadeUp, cardList } from "../components/animations/variants.ts";
 import { asset } from "../utils/assets.ts";
 import { Footer } from "../layouts/Footer.tsx";
 
-const types = ["All", ...new Set(projects.map((p) => p.type))];
+const types = ["All", ...new Set(projects.flatMap((p) => p.type))];
 
 export const ProjectsPage = () => {
   const [activeType, setActiveType] = useState("All");
@@ -18,7 +18,7 @@ export const ProjectsPage = () => {
   const filteredProjects =
     activeType === "All"
       ? projects
-      : projects.filter((p) => p.type === activeType);
+      : projects.filter((p) => p.type.includes(activeType));
   return (
     <>
       <section className="projects-page-description">

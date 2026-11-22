@@ -8,6 +8,7 @@ import { SelectedWorks } from "./SelectedWorks.tsx";
 import { Link } from "react-router";
 import "../styles/HomePage.css";
 import { asset } from "../utils/assets.ts";
+import { SkillsList } from "../components/SkillList.tsx";
 
 export const HomePage = () => {
   return (
@@ -70,19 +71,7 @@ export const HomePage = () => {
           See More Works
         </Link>
       </section>
-      <section className="tech-section">
-        <h3>My Tech Stack</h3>
-        <p className="desc-technologies">
-          Current technologies I use for my projects
-        </p>
-        <div className="tech-cards-container">
-          {tools.map((tool) => (
-            <motion.div key={tool.id} variants={fadeUp}>
-              <ToolCard tool={tool} />
-            </motion.div>
-          ))}
-        </div>
-      </section>
+      <SkillsList />
       <section id="contact" className="contact">
         <div className="contact-info">
           <h3>Lets make something happen.</h3>
