@@ -1,7 +1,4 @@
 import { motion } from "motion/react";
-import { ToolCard } from "../components/ToolCard/ToolCard";
-import { tools } from "../data/tools.ts";
-import { fadeUp } from "../components/animations/variants.ts";
 import { AnimatedWords } from "../components/animations/AnimatedWords.tsx";
 import { START } from "../components/animations/timing.ts";
 import { SelectedWorks } from "./SelectedWorks.tsx";
