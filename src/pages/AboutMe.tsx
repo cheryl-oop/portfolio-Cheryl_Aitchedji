@@ -24,7 +24,7 @@ export const AboutMe = () => {
           />
           <motion.img
             className="image-doodle-top"
-            src={asset("/images/doodles/cher-hi-trans.png")}
+            src={asset("/images/doodles/cher-hi.svg")}
             alt=""
             initial={{ scale: 0, rotate: -25, opacity: 0 }}
             animate={{ scale: 1, rotate: 0, opacity: 1 }}
@@ -37,7 +37,7 @@ export const AboutMe = () => {
           />
           <motion.img
             className="image-scribble"
-            src={asset("/images/doodles/scribble.png")}
+            src={asset("/images/doodles/scribble.svg")}
             alt=""
             initial={{ clipPath: "inset(0% 100% 0% 0%)" }}
             animate={{ clipPath: "inset(0% 0% 0% 0%)" }}

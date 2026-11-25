@@ -31,8 +31,8 @@
 .image-scribble {
   position: absolute;
   right: 0;
-  bottom: -10%;
-  width: 60%;
+  bottom: -5%;
+  width: 50%;
   z-index: 2;
   pointer-events: none;
 }
@@ -87,8 +87,8 @@
   .image-scribble {
     position: absolute;
     right: -5%;
-    bottom: -15%;
-    width: 60%;
+    bottom: -5%;
+    width: 50%;
     z-index: 2;
     pointer-events: none;
   }
